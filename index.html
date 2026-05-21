@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="A playful online art gallery for a future vase with flowers painting and wonderfully silly related artworks."
+    >
+    <title>Bloom Boom Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Bloom Boom Gallery home">
+        <span class="brand-mark">BB</span>
+        <span>Bloom Boom Gallery</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#featured">Featured</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Tiny museum. Giant flower energy.</p>
+          <h1 id="hero-title">An online art gallery with extra petals and questionable seriousness.</h1>
+          <p>
+            Welcome to the official future home of your vase-with-flowers painting. Until the real
+            masterpiece arrives, the gallery staff (one dramatic pigeon and a very emotional paintbrush)
+            have arranged related imaginary artworks to keep the walls happy.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#featured">Reserve the best wall</a>
+            <button class="button secondary" type="button" id="moodButton">Ask the curator</button>
+          </div>
+          <p class="curator-note" id="curatorNote" aria-live="polite">
+            Curator note: The flowers have requested dramatic lighting and one snack.
+          </p>
+        </div>
+
+        <div class="hero-art" aria-label="Decorative painted vase and flowers">
+          <div class="sunburst"></div>
+          <div class="paint-card">
+            <div class="flower-scene">
+              <span class="flower flower-one"></span>
+              <span class="flower flower-two"></span>
+              <span class="flower flower-three"></span>
+              <span class="stem stem-one"></span>
+              <span class="stem stem-two"></span>
+              <span class="stem stem-three"></span>
+              <span class="vase"></span>
+              <span class="table"></span>
+            </div>
+            <p>Temporary stunt double for your painting</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured" id="featured" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <p class="eyebrow">Main masterpiece parking spot</p>
+          <h2 id="featured-title">Your vase with flowers goes here</h2>
+          <p>
+            When you finish the picture, replace this placeholder with the real photo. The whole
+            exhibition is built around it: joyful colors, soft paint texture, and a little comedy.
+          </p>
+        </div>
+
+        <article class="featured-card">
+          <div class="upload-frame">
+            <div class="placeholder-painting">
+              <span class="brush-stroke stroke-one"></span>
+              <span class="brush-stroke stroke-two"></span>
+              <span class="brush-stroke stroke-three"></span>
+              <strong>Future painting</strong>
+              <small>Vase with flowers, painted with paint</small>
+            </div>
+          </div>
+          <div class="featured-details">
+            <span class="pill">Coming soon</span>
+            <h3>The Vase That Knows It Looks Good</h3>
+            <p>
+              A cheerful vase of flowers painted by hand, expected to cause visitors to say
+              "wow" and then pretend they understood art history all along.
+            </p>
+            <ul class="art-facts">
+              <li><strong>Medium:</strong> Paint, courage, and flower confidence</li>
+              <li><strong>Mood:</strong> Fresh, funny, slightly fancy</li>
+              <li><strong>Best viewed with:</strong> Tea, biscuits, or dramatic sunglasses</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Related paintings from imagination</p>
+          <h2 id="gallery-title">Friends of the flower vase</h2>
+          <p>
+            These artworks are invented to match your future painting: botanical, colorful, and
+            just silly enough to make the gallery feel alive.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="art-card">
+            <div class="mini-art mini-art-rose" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill peach">Oil-ish on canvas</span>
+              <h3>Rose Wearing a Tiny Crown</h3>
+              <p>A royal flower portrait for people who believe petals deserve public holidays.</p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div class="mini-art mini-art-cat" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill mint">Acrylic daydream</span>
+              <h3>Cat Inspecting the Bouquet</h3>
+              <p>The cat is not impressed, which means the composition is probably excellent.</p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div class="mini-art mini-art-moon" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill lavender">Moonlit paint</span>
+              <h3>Midnight Tulips Practicing Drama</h3>
+              <p>Elegant flowers rehearsing their "I have secrets" pose under a sleepy moon.</p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div class="mini-art mini-art-orange" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill yellow">Still life remix</span>
+              <h3>Orange Beside a Very Proud Leaf</h3>
+              <p>A juicy side character added because every flower needs a weird best friend.</p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div class="mini-art mini-art-cloud" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill blue">Pastel mischief</span>
+              <h3>Cloud Watering the Wrong Garden</h3>
+              <p>A fluffy cloud tries to help and accidentally becomes the exhibition comedian.</p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div class="mini-art mini-art-frame" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill pink">Mixed media wink</span>
+              <h3>Empty Frame Waiting Politely</h3>
+              <p>The frame is reserved for your next masterpiece and already looks nervous.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="visit" id="visit" aria-labelledby="visit-title">
+        <div>
+          <p class="eyebrow">Gallery rules</p>
+          <h2 id="visit-title">How to enjoy the exhibition</h2>
+        </div>
+        <div class="rule-list">
+          <article>
+            <span>01</span>
+            <h3>Smile at the flowers</h3>
+            <p>They worked hard growing all those colors.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Bring your painting photo</h3>
+            <p>Drop it into the main frame when it is ready.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Do not argue with the vase</h3>
+            <p>It has excellent posture and will probably win.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Bloom Boom Gallery - imaginary opening hours: whenever the flowers wake up.</p>
+      <a href="#top">Back to the top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
