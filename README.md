@@ -1,7 +1,18 @@
-# Bloom Boom Gallery
+# Галерия Шенгова
 
-A playful static website for an online art gallery centered on a future
-vase-with-flowers painting.
+Статичен сайт за онлайн галерия с картината „Лилава тишина с круша“ от
+художник Селин Красимирова Шенгова.
 
-Open `index.html` in a browser to view the gallery. When the real painting photo
-is ready, replace the featured placeholder artwork with the image.
+## Как да отвориш сайта
+
+1. Отвори файла `index.html` с браузър.
+2. За отделните визитки отвори `business-cards.html`.
+3. Ако искаш да изпратиш сайта на някого, изпрати заедно тези файлове:
+   - `index.html`
+   - `business-cards.html`
+   - `styles.css`
+   - `script.js`
+   - `selin-kana-krusha.svg`
+
+Визитките могат да се принтират или запазят като PDF от страницата
+`business-cards.html`.

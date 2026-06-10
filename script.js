@@ -1,21 +1,24 @@
 const curatorNotes = [
-  "Curator note: The flowers have requested dramatic lighting and one snack.",
-  "Curator note: The vase says its good side is every side.",
-  "Curator note: One tulip fainted after hearing the word 'masterpiece'.",
-  "Curator note: The imaginary security guard is a butterfly named Kevin.",
-  "Curator note: Please clap softly. The roses are practicing confidence.",
-  "Curator note: The paintbrush denies all accusations of tickling the canvas."
+  "Бележка от куратора: Крушата настоява да бъде наричана „златният гост“.",
+  "Бележка от куратора: Каната е тъмна, защото пази артистична мистерия.",
+  "Бележка от куратора: Зелената маса е спокойна, но има мнение за всичко.",
+  "Бележка от куратора: Лилавият фон вече си поръча автограф.",
+  "Бележка от куратора: Ако картината мълчи, значи мисли много дълбоко.",
+  "Бележка от куратора: Крушата поиска червен килим, но получи зелена маса."
 ];
 
-const moodButton = document.querySelector("#moodButton");
+const curatorButton = document.querySelector("#curatorButton");
 const curatorNote = document.querySelector("#curatorNote");
+const copyButton = document.querySelector("#copyButton");
+const shareText = document.querySelector("#shareText");
+const copyStatus = document.querySelector("#copyStatus");
 
 let noteIndex = 0;
 
-moodButton?.addEventListener("click", () => {
+curatorButton?.addEventListener("click", () => {
   noteIndex = (noteIndex + 1) % curatorNotes.length;
   curatorNote.textContent = curatorNotes[noteIndex];
-  moodButton.animate(
+  curatorButton.animate(
     [
       { transform: "translateY(0) rotate(0deg)" },
       { transform: "translateY(-5px) rotate(2deg)" },
@@ -26,4 +29,19 @@ moodButton?.addEventListener("click", () => {
       easing: "ease-out"
     }
   );
+});
+
+copyButton?.addEventListener("click", async () => {
+  const text = shareText?.textContent?.trim();
+
+  if (!text) {
+    return;
+  }
+
+  try {
+    await navigator.clipboard.writeText(text);
+    copyStatus.textContent = "Готово! Текстът е копиран.";
+  } catch {
+    copyStatus.textContent = "Маркирай текста по-горе и го копирай ръчно.";
+  }
 });

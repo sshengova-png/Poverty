@@ -1,197 +1,170 @@
 <!doctype html>
-<html lang="en">
+<html lang="bg">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="A playful online art gallery for a future vase with flowers painting and wonderfully silly related artworks."
+      content="Онлайн галерия за картината на Селин Красимирова Шенгова с тъмна кана и жълта круша."
     >
-    <title>Bloom Boom Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    >
+    <title>Галерия Шенгова</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Bloom Boom Gallery home">
-        <span class="brand-mark">BB</span>
-        <span>Bloom Boom Gallery</span>
+      <a class="brand" href="#top" aria-label="Галерия Шенгова - начало">
+        <span class="brand-mark">S</span>
+        <span>Галерия Шенгова</span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#featured">Featured</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#visit">Visit</a>
+      <nav class="main-nav" aria-label="Основна навигация">
+        <a href="#artwork">Картината</a>
+        <a href="#collection">Колекция</a>
+        <a href="#share">Изпрати</a>
+        <a href="business-cards.html">Визитки</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Tiny museum. Giant flower energy.</p>
-          <h1 id="hero-title">An online art gallery with extra petals and questionable seriousness.</h1>
+          <p class="eyebrow">Онлайн галерия с ръчно рисуван характер</p>
+          <h1 id="hero-title">Кана, круша и малко артистична магия.</h1>
           <p>
-            Welcome to the official future home of your vase-with-flowers painting. Until the real
-            masterpiece arrives, the gallery staff (one dramatic pigeon and a very emotional paintbrush)
-            have arranged related imaginary artworks to keep the walls happy.
+            Добре дошли в малката, весела и леко драматична галерия на
+            <strong>Селин Красимирова Шенгова</strong>. Главната картина е натюрморт
+            с тъмна кана, жълта круша, лилав фон и зелена маса, която изглежда така,
+            сякаш пази тайна.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#featured">Reserve the best wall</a>
-            <button class="button secondary" type="button" id="moodButton">Ask the curator</button>
+            <a class="button primary" href="#artwork">Виж главната картина</a>
+            <button class="button secondary" type="button" id="curatorButton">
+              Кажи смешна бележка
+            </button>
           </div>
           <p class="curator-note" id="curatorNote" aria-live="polite">
-            Curator note: The flowers have requested dramatic lighting and one snack.
+            Бележка от куратора: Крушата настоява да бъде наричана „златният гост“.
           </p>
         </div>
 
-        <div class="hero-art" aria-label="Decorative painted vase and flowers">
-          <div class="sunburst"></div>
-          <div class="paint-card">
-            <div class="flower-scene">
-              <span class="flower flower-one"></span>
-              <span class="flower flower-two"></span>
-              <span class="flower flower-three"></span>
-              <span class="stem stem-one"></span>
-              <span class="stem stem-two"></span>
-              <span class="stem stem-three"></span>
-              <span class="vase"></span>
-              <span class="table"></span>
-            </div>
-            <p>Temporary stunt double for your painting</p>
-          </div>
-        </div>
+        <figure class="hero-frame">
+          <img
+            src="selin-kana-krusha.svg"
+            alt="Картина на Селин Красимирова Шенгова: тъмна кана до жълта круша върху зелена маса и лилав фон."
+          >
+          <figcaption>„Каната и крушата, които позираха сериозно“</figcaption>
+        </figure>
       </section>
 
-      <section class="featured" id="featured" aria-labelledby="featured-title">
+      <section class="artwork-section" id="artwork" aria-labelledby="artwork-title">
         <div class="section-heading">
-          <p class="eyebrow">Main masterpiece parking spot</p>
-          <h2 id="featured-title">Your vase with flowers goes here</h2>
+          <p class="eyebrow">Главна творба</p>
+          <h2 id="artwork-title">Лилава тишина с круша</h2>
           <p>
-            When you finish the picture, replace this placeholder with the real photo. The whole
-            exhibition is built around it: joyful colors, soft paint texture, and a little comedy.
+            Картината е измислено представена като специален експонат от колекцията
+            „Натюрморти, които не обичат да стоят мирно“.
           </p>
         </div>
 
-        <article class="featured-card">
-          <div class="upload-frame">
-            <div class="placeholder-painting">
-              <span class="brush-stroke stroke-one"></span>
-              <span class="brush-stroke stroke-two"></span>
-              <span class="brush-stroke stroke-three"></span>
-              <strong>Future painting</strong>
-              <small>Vase with flowers, painted with paint</small>
-            </div>
+        <article class="feature-card">
+          <div class="feature-image">
+            <img
+              src="selin-kana-krusha.svg"
+              alt="Илюстрирана версия на картината с кана и круша."
+            >
           </div>
-          <div class="featured-details">
-            <span class="pill">Coming soon</span>
-            <h3>The Vase That Knows It Looks Good</h3>
+          <div class="feature-details">
+            <span class="pill">Оригинална картина</span>
+            <h3>Лилава тишина с круша</h3>
             <p>
-              A cheerful vase of flowers painted by hand, expected to cause visitors to say
-              "wow" and then pretend they understood art history all along.
+              Художникът събира в една сцена силна лилава стена, зелена повърхност,
+              тъмна кана и круша с много самочувствие. Резултатът е топъл, смел и
+              малко забавен натюрморт, който казва: „Аз съм сериозно изкуство, но
+              мога и да се усмихвам.“
             </p>
             <ul class="art-facts">
-              <li><strong>Medium:</strong> Paint, courage, and flower confidence</li>
-              <li><strong>Mood:</strong> Fresh, funny, slightly fancy</li>
-              <li><strong>Best viewed with:</strong> Tea, biscuits, or dramatic sunglasses</li>
+              <li><strong>Художник:</strong> Селин Красимирова Шенгова</li>
+              <li><strong>Техника:</strong> живопис с плътни цветове и свободен контур</li>
+              <li><strong>Настроение:</strong> лилаво, зелено, смело и леко смешно</li>
+              <li><strong>Любим детайл:</strong> крушата, която се държи като знаменитост</li>
             </ul>
           </div>
         </article>
       </section>
 
-      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <section class="collection-section" id="collection" aria-labelledby="collection-title">
         <div class="section-heading centered">
-          <p class="eyebrow">Related paintings from imagination</p>
-          <h2 id="gallery-title">Friends of the flower vase</h2>
+          <p class="eyebrow">Измислена колекция към картината</p>
+          <h2 id="collection-title">Творби, които си подхождат с нея</h2>
           <p>
-            These artworks are invented to match your future painting: botanical, colorful, and
-            just silly enough to make the gallery feel alive.
+            Тези картини са измислени, за да изглежда галерията богата, цветна и
+            забавна. Те не са истински, но имат много голямо самочувствие.
           </p>
         </div>
 
         <div class="gallery-grid">
           <article class="art-card">
-            <div class="mini-art mini-art-rose" aria-hidden="true"></div>
+            <div class="mini-art mini-art-purple" aria-hidden="true"></div>
             <div class="art-card-content">
-              <span class="pill peach">Oil-ish on canvas</span>
-              <h3>Rose Wearing a Tiny Crown</h3>
-              <p>A royal flower portrait for people who believe petals deserve public holidays.</p>
+              <span class="pill peach">Въображаема живопис</span>
+              <h3>Лилавият фон отива на почивка</h3>
+              <p>Фонът решава, че е главен герой, и изисква собствена рамка.</p>
             </div>
           </article>
           <article class="art-card">
-            <div class="mini-art mini-art-cat" aria-hidden="true"></div>
+            <div class="mini-art mini-art-pear" aria-hidden="true"></div>
             <div class="art-card-content">
-              <span class="pill mint">Acrylic daydream</span>
-              <h3>Cat Inspecting the Bouquet</h3>
-              <p>The cat is not impressed, which means the composition is probably excellent.</p>
+              <span class="pill yellow">Портрет на плод</span>
+              <h3>Круша със самочувствие</h3>
+              <p>Малка, жълта и убедена, че всички аплодисменти са за нея.</p>
             </div>
           </article>
           <article class="art-card">
-            <div class="mini-art mini-art-moon" aria-hidden="true"></div>
+            <div class="mini-art mini-art-jug" aria-hidden="true"></div>
             <div class="art-card-content">
-              <span class="pill lavender">Moonlit paint</span>
-              <h3>Midnight Tulips Practicing Drama</h3>
-              <p>Elegant flowers rehearsing their "I have secrets" pose under a sleepy moon.</p>
+              <span class="pill lavender">Сериозна кана</span>
+              <h3>Каната мисли за изкуство</h3>
+              <p>Тя мълчи, защото е много дълбока. Или просто е кана.</p>
             </div>
           </article>
           <article class="art-card">
-            <div class="mini-art mini-art-orange" aria-hidden="true"></div>
+            <div class="mini-art mini-art-table" aria-hidden="true"></div>
             <div class="art-card-content">
-              <span class="pill yellow">Still life remix</span>
-              <h3>Orange Beside a Very Proud Leaf</h3>
-              <p>A juicy side character added because every flower needs a weird best friend.</p>
-            </div>
-          </article>
-          <article class="art-card">
-            <div class="mini-art mini-art-cloud" aria-hidden="true"></div>
-            <div class="art-card-content">
-              <span class="pill blue">Pastel mischief</span>
-              <h3>Cloud Watering the Wrong Garden</h3>
-              <p>A fluffy cloud tries to help and accidentally becomes the exhibition comedian.</p>
-            </div>
-          </article>
-          <article class="art-card">
-            <div class="mini-art mini-art-frame" aria-hidden="true"></div>
-            <div class="art-card-content">
-              <span class="pill pink">Mixed media wink</span>
-              <h3>Empty Frame Waiting Politely</h3>
-              <p>The frame is reserved for your next masterpiece and already looks nervous.</p>
+              <span class="pill mint">Зелен натюрморт</span>
+              <h3>Масата пази тайна</h3>
+              <p>Никой не знае тайната, но всички уважават зеленото настроение.</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="visit" id="visit" aria-labelledby="visit-title">
-        <div>
-          <p class="eyebrow">Gallery rules</p>
-          <h2 id="visit-title">How to enjoy the exhibition</h2>
+      <section class="share-section" id="share" aria-labelledby="share-title">
+        <div class="section-heading">
+          <p class="eyebrow">Лесно копиране и изпращане</p>
+          <h2 id="share-title">Готов текст за изпращане</h2>
+          <p>
+            Натисни бутона, за да копираш кратка покана. Самият сайт се отваря от
+            файла <strong>index.html</strong>. За визитките отвори
+            <strong>business-cards.html</strong>.
+          </p>
         </div>
-        <div class="rule-list">
-          <article>
-            <span>01</span>
-            <h3>Smile at the flowers</h3>
-            <p>They worked hard growing all those colors.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Bring your painting photo</h3>
-            <p>Drop it into the main frame when it is ready.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Do not argue with the vase</h3>
-            <p>It has excellent posture and will probably win.</p>
-          </article>
+
+        <div class="share-card">
+          <p id="shareText">
+            Заповядайте в онлайн галерия „Шенгова“ - весела изложба с картината
+            „Лилава тишина с круша“ от художник Селин Красимирова Шенгова.
+          </p>
+          <div class="share-actions">
+            <button class="button primary" type="button" id="copyButton">Копирай текста</button>
+            <a class="button secondary" href="business-cards.html">Отвори визитките</a>
+          </div>
+          <p class="copy-status" id="copyStatus" aria-live="polite"></p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Bloom Boom Gallery - imaginary opening hours: whenever the flowers wake up.</p>
-      <a href="#top">Back to the top</a>
+      <p>Галерия Шенгова - отворена винаги, когато крушата е в добро настроение.</p>
+      <a href="#top">Нагоре</a>
     </footer>
 
     <script src="script.js"></script>
