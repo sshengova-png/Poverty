@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="bg">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Онлайн галерия за картината на Селин Красимирова Шенгова с тъмна кана и жълта круша."
+    >
+    <title>Галерия Шенгова</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Галерия Шенгова - начало">
+        <span class="brand-mark">S</span>
+        <span>Галерия Шенгова</span>
+      </a>
+      <nav class="main-nav" aria-label="Основна навигация">
+        <a href="#artwork">Картината</a>
+        <a href="#collection">Колекция</a>
+        <a href="#share">Изпрати</a>
+        <a href="business-cards.html">Визитки</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Онлайн галерия с ръчно рисуван характер</p>
+          <h1 id="hero-title">Кана, круша и малко артистична магия.</h1>
+          <p>
+            Добре дошли в малката, весела и леко драматична галерия на
+            <strong>Селин Красимирова Шенгова</strong>. Главната картина е натюрморт
+            с тъмна кана, жълта круша, лилав фон и зелена маса, която изглежда така,
+            сякаш пази тайна.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#artwork">Виж главната картина</a>
+            <button class="button secondary" type="button" id="curatorButton">
+              Кажи смешна бележка
+            </button>
+          </div>
+          <p class="curator-note" id="curatorNote" aria-live="polite">
+            Бележка от куратора: Крушата настоява да бъде наричана „златният гост“.
+          </p>
+        </div>
+
+        <figure class="hero-frame">
+          <img
+            src="selin-kana-krusha.svg"
+            data-photo-src="selin-painting-photo.jpg"
+            alt="Картина на Селин Красимирова Шенгова: тъмна кана до жълта круша върху зелена маса и лилав фон."
+          >
+          <figcaption>„Каната и крушата, които позираха сериозно“</figcaption>
+        </figure>
+      </section>
+
+      <section class="artwork-section" id="artwork" aria-labelledby="artwork-title">
+        <div class="section-heading">
+          <p class="eyebrow">Главна творба</p>
+          <h2 id="artwork-title">Лилава тишина с круша</h2>
+          <p>
+            Картината е измислено представена като специален експонат от колекцията
+            „Натюрморти, които не обичат да стоят мирно“.
+          </p>
+        </div>
+
+        <article class="feature-card">
+          <div class="feature-image">
+            <img
+              src="selin-kana-krusha.svg"
+              data-photo-src="selin-painting-photo.jpg"
+              alt="Снимка на картината с тъмна кана, жълта круша, лилав фон и зелена маса."
+            >
+          </div>
+          <div class="feature-details">
+            <span class="pill">Оригинална картина</span>
+            <h3>Лилава тишина с круша</h3>
+            <p>
+              Художникът събира в една сцена силна лилава стена, зелена повърхност,
+              тъмна кана и круша с много самочувствие. Резултатът е топъл, смел и
+              малко забавен натюрморт, който казва: „Аз съм сериозно изкуство, но
+              мога и да се усмихвам.“
+            </p>
+            <ul class="art-facts">
+              <li><strong>Художник:</strong> Селин Красимирова Шенгова</li>
+              <li><strong>Техника:</strong> живопис с плътни цветове и свободен контур</li>
+              <li><strong>Настроение:</strong> лилаво, зелено, смело и леко смешно</li>
+              <li><strong>Любим детайл:</strong> крушата, която се държи като знаменитост</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="collection-section" id="collection" aria-labelledby="collection-title">
+        <div class="section-heading centered">
+          <p class="eyebrow">Измислена колекция към картината</p>
+          <h2 id="collection-title">Творби, които си подхождат с нея</h2>
+          <p>
+            Тези картини са измислени, за да изглежда галерията богата, цветна и
+            забавна. Те не са истински, но имат много голямо самочувствие.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="art-card">
+            <div class="mini-art mini-art-purple" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill peach">Въображаема живопис</span>
+              <h3>Лилавият фон отива на почивка</h3>
+              <p>Фонът решава, че е главен герой, и изисква собствена рамка.</p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div class="mini-art mini-art-pear" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill yellow">Портрет на плод</span>
+              <h3>Круша със самочувствие</h3>
+              <p>Малка, жълта и убедена, че всички аплодисменти са за нея.</p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div class="mini-art mini-art-jug" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill lavender">Сериозна кана</span>
+              <h3>Каната мисли за изкуство</h3>
+              <p>Тя мълчи, защото е много дълбока. Или просто е кана.</p>
+            </div>
+          </article>
+          <article class="art-card">
+            <div class="mini-art mini-art-table" aria-hidden="true"></div>
+            <div class="art-card-content">
+              <span class="pill mint">Зелен натюрморт</span>
+              <h3>Масата пази тайна</h3>
+              <p>Никой не знае тайната, но всички уважават зеленото настроение.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="share-section" id="share" aria-labelledby="share-title">
+        <div class="section-heading">
+          <p class="eyebrow">Лесно копиране и изпращане</p>
+          <h2 id="share-title">Готов текст за изпращане</h2>
+          <p>
+            Натисни бутона, за да копираш кратка покана. Самият сайт се отваря от
+            файла <strong>index.html</strong>. За визитките отвори
+            <strong>business-cards.html</strong>. За да се показва реалната снимка,
+            запази я в същата папка с име <strong>selin-painting-photo.jpg</strong>.
+          </p>
+        </div>
+
+        <div class="share-card">
+          <p id="shareText">
+            Заповядайте в онлайн галерия „Шенгова“ - весела изложба с картината
+            „Лилава тишина с круша“ от художник Селин Красимирова Шенгова.
+          </p>
+          <div class="share-actions">
+            <button class="button primary" type="button" id="copyButton">Копирай текста</button>
+            <a class="button secondary" href="business-cards.html">Отвори визитките</a>
+          </div>
+          <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Галерия Шенгова - отворена винаги, когато крушата е в добро настроение.</p>
+      <a href="#top">Нагоре</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
