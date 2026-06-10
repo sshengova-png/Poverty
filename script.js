@@ -12,6 +12,7 @@ const curatorNote = document.querySelector("#curatorNote");
 const copyButton = document.querySelector("#copyButton");
 const shareText = document.querySelector("#shareText");
 const copyStatus = document.querySelector("#copyStatus");
+const photoSlots = document.querySelectorAll("[data-photo-src]");
 
 let noteIndex = 0;
 
@@ -44,4 +45,19 @@ copyButton?.addEventListener("click", async () => {
   } catch {
     copyStatus.textContent = "Маркирай текста по-горе и го копирай ръчно.";
   }
+});
+
+photoSlots.forEach((slot) => {
+  const photo = new Image();
+  const photoSource = slot.dataset.photoSrc;
+
+  if (!photoSource) {
+    return;
+  }
+
+  photo.addEventListener("load", () => {
+    slot.src = photoSource;
+  });
+
+  photo.src = photoSource;
 });
